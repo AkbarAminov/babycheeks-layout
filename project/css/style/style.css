@@ -55,3 +55,14 @@ a:hover {
 .navbar-center {
   justify-content: center;
   margin: 0 auto; }
+
+.album {
+  margin-top: 20px; }
+
+.is-background-image {
+  background: url(../../img/baby-smile-4.jpg);
+  background-size: cover;
+  background-position-y: center; }
+
+.text-is-right {
+  text-align: right; }
