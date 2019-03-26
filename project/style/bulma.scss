@@ -1,2 +1,9 @@
 @charset "utf-8";
 @import "../../node_modules/bulma/bulma.sass";
+
+.navbar-center {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0 auto;
+}
