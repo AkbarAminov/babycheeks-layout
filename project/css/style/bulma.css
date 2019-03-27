@@ -6931,3 +6931,9 @@ label.panel-block {
   justify-content: center;
   align-items: stretch;
   margin: 0 auto; }
+
+.text-is-right {
+  text-align: right; }
+
+.text-is-center {
+  text-align: center; }

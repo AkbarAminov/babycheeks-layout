@@ -1,6 +1,36 @@
 * {
   box-sizing: border-box; }
 
+@font-face {
+  font-family: 'GT Walsheim Bold';
+  src: url("/project/extension/GTWalsheimPro-Bold.woff2") format("woff2"), url("/project/extension/GTWalsheimPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'GT Walsheim Pro Black';
+  src: url("/project/extension/GTWalsheimPro-Black.woff2") format("woff2"), url("/project/extension/GTWalsheimPro-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: url("/project/extension/GTWalsheimPro.woff2") format("woff2"), url("/project/extension/GTWalsheimPro.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'GT Walsheim Medium';
+  src: url("/project/extension/GTWalsheimPro-Medium.woff2") format("woff2"), url("/project/extension/GTWalsheimPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'GT Walsheim UltraBold';
+  src: url("/project/extension/GTWalsheimPro-UltraBold.woff2") format("woff2"), url("/project/extension/GTWalsheimPro-UltraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal; }
+
 /* Scroll Bar */
 ::-webkit-scrollbar {
   width: 5px; }
@@ -18,7 +48,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans'; }
+  font-family: gt walsheim pro,sans-serif; }
 
 a {
   text-decoration: none;
@@ -41,7 +71,7 @@ a:hover {
 
 .header__menu {
   position: relative;
-  z-index: 0; }
+  z-index: 5; }
 
 .box:not(:last-child) {
   margin-bottom: 0; }
@@ -63,6 +93,3 @@ a:hover {
   background: url(../../img/baby-smile-4.jpg);
   background-size: cover;
   background-position-y: center; }
-
-.text-is-right {
-  text-align: right; }
