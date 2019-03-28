@@ -3,31 +3,25 @@
 
 @font-face {
   font-family: 'GT Walsheim Bold';
-  src: url("/project/extension/GTWalsheimPro-Bold.woff2") format("woff2"), url("/project/extension/GTWalsheimPro-Bold.woff") format("woff");
+  src: url("/project/extension/fonts/GTWalsheimPro-Bold.woff2") format("woff2"), url("/project/extension/fonts/GTWalsheimPro-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'GT Walsheim Pro Black';
-  src: url("/project/extension/GTWalsheimPro-Black.woff2") format("woff2"), url("/project/extension/GTWalsheimPro-Black.woff") format("woff");
+  src: url("/project/extension/fonts/GTWalsheimPro-Black.woff2") format("woff2"), url("/project/extension/fonts/GTWalsheimPro-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal; }
 
 @font-face {
-  font-family: 'GT Walsheim Pro';
-  src: url("/project/extension/GTWalsheimPro.woff2") format("woff2"), url("/project/extension/GTWalsheimPro.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
   font-family: 'GT Walsheim Medium';
-  src: url("/project/extension/GTWalsheimPro-Medium.woff2") format("woff2"), url("/project/extension/GTWalsheimPro-Medium.woff") format("woff");
+  src: url("/project/extension/fonts/GTWalsheimPro-Medium.woff2") format("woff2"), url("/project/extension/fonts/GTWalsheimPro-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'GT Walsheim UltraBold';
-  src: url("/project/extension/GTWalsheimPro-UltraBold.woff2") format("woff2"), url("/project/extension/GTWalsheimPro-UltraBold.woff") format("woff");
+  src: url("/project/extension/fonts/GTWalsheimPro-UltraBold.woff2") format("woff2"), url("/project/extension/fonts/GTWalsheimPro-UltraBold.woff") format("woff");
   font-weight: 800;
   font-style: normal; }
 
@@ -88,6 +82,76 @@ a:hover {
 
 .album {
   margin-top: 20px; }
+
+.social-media__icons {
+  display: flex; }
+
+.carousel__hr {
+  margin: 10px 0;
+  border: 1px dashed #3A69D3; }
+
+.social-media__icons a {
+  max-width: 15%;
+  padding: 0 20px; }
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: .3s; }
+
+.item:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%); }
+
+.owl-stage {
+  display: flex;
+  align-items: center; }
+  .owl-stage img {
+    max-width: 75%; }
+
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  top: 45%;
+  background: transparent; }
+
+.owl-carousel .owl-nav .owl-prev {
+  background: transparent;
+  left: 0px;
+  outline: none;
+  transition: .3s; }
+
+.owl-carousel .owl-nav .owl-next {
+  background: transparent;
+  right: 0px;
+  outline: none;
+  transition: .3s; }
+
+.owl-carousel .owl-dots {
+  position: absolute;
+  bottom: 10px; }
+
+.owl-carousel .owl-nav [class*='owl-']:hover {
+  background: transparent;
+  color: #3A69D3;
+  text-decoration: none;
+  outline: none; }
+
+.owl-carousel .owl-dots .owl-dot span {
+  background: transparent; }
+
+.owl-carousel .owl-dots .owl-dot:hover span {
+  background: transparent; }
+
+.owl-carousel .owl-dots .owl-dot.active span {
+  background: transparent; }
+
+.owl-carousel .owl-nav {
+  margin-top: 0; }
 
 .is-background-image {
   background: url(../../img/baby-smile-4.jpg);
