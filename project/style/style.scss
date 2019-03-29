@@ -217,3 +217,56 @@ a:hover {
 }
 .contactus__container .control input{
 }
+
+// Parent Category Page
+.no-box-shadow{
+  box-shadow: none;
+}
+
+.child-categories__list li{
+  padding: 5px 0;
+}
+.child-categories__list li::before{
+  padding: 0 15px;
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900; 
+  content: "\f105";
+}
+
+
+
+.expand-button {
+  cursor: pointer;
+  display: block;
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  font-size: 16px;
+  margin-top: 15px;
+  
+  &:hover, &:active, &:focus {
+    outline: none;
+  }
+}
+
+// Okay legit CSS now
+.special-text {
+  position: relative;
+  max-height: 200px;
+  overflow: hidden;
+  transition: max-height 1s ease;
+  
+  &.-expanded {
+    max-height: 100vh;
+  }
+}
+
+.special-text:not(.-expanded)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, .3));
+}
