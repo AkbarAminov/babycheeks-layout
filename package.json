@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "bulma": "^0.7.4",
+    "bulma-extensions": "^6.2.4",
     "cool-checkboxes-for-bulma.io": "^1.1.0",
     "gulp": "^3.9.1"
   },
