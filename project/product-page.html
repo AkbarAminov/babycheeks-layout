@@ -7,12 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link rel="stylesheet" href="extension/owl-carousel/owl.carousel.css">
   <link rel="stylesheet" href="css/style/bulma.css">
   <link rel="stylesheet" href="css/style/tools.css">
   <link rel="stylesheet" href="css/style/style.css">
   <link rel="stylesheet" href="css/style/media.css">
-
   <title>Document</title>
 </head>
 
@@ -195,107 +193,82 @@
 
 
   </div>
+
+
   <div class="main__body">
+    <div class="page__product">
+      <div class="container is-fluid">
 
-    <!-- Tiles -->
-
-    <div class="album container text-is-center">
-      <div class="tile is-ancestor">
-        <div class="tile is-vertical is-8">
-          <div class="tile">
-            <div class="tile is-parent is-vertical">
-              <article class="tile is-child">
-                <!-- Put any content you want -->
-                <figure class="image is-4by3">
-                  <img src="https://bulma.io/images/placeholders/640x480.png">
-                </figure>
-                <div class="d-flex flex-column-nowrap">
-                  <p class="is-size-3 has-text-weight-semibold">Middle</p>
-                  <p class="is-size-6">With an image</p>
-                </div>
-              </article>
-              <article class="tile is-child">
-                <!-- Put any content you want -->
-                <figure class="image is-4by3">
-                  <img src="https://bulma.io/images/placeholders/640x480.png">
-                </figure>
-                <div class="d-flex flex-column-nowrap">
-                  <p class="is-size-3 has-text-weight-semibold">Middle</p>
-                  <p class="is-size-6">With an image</p>
-                </div>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child">
-                <!-- Put any content you want -->
-                <figure class="image is-3by5">
-                  <img src="https://bulma.io/images/placeholders/480x800.png">
-                </figure>
-                <div class="d-flex flex-column-nowrap">
-                  <p class="is-size-3 has-text-weight-semibold">Middle</p>
-                  <p class="is-size-6">With an image</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child">
-              <!-- Put any content you want -->
-              <figure class="image is-16by9">
-                <img src="https://bulma.io/images/placeholders/640x360.png">
-              </figure>
-              <div class="d-flex flex-column-nowrap">
-                <p class="is-size-3 has-text-weight-semibold">Middle</p>
-                <p class="is-size-6">With an image</p>
-              </div>
-            </article>
-          </div>
+        <div class="product__breadcrumb mh-2 text-center">
+          <nav class="breadcrumb d-flex justify-center" aria-label="breadcrumbs">
+            <ul>
+              <li><a href="#">Main</a></li>
+              <li><a href="#">Category Parent</a></li>
+              <li><a href="#">Category Child</a></li>
+              <li class="is-active"><a href="#" aria-current="page">Product</a></li>
+            </ul>
+          </nav>
         </div>
-        <div class="tile is-parent is-vertical">
-          <article class="tile is-child">
-            <!-- Put any content you want -->
-            <figure class="image is-3by4">
-              <img src="https://bulma.io/images/placeholders/480x640.png">
-            </figure>
-            <div class="d-flex flex-column-nowrap">
-              <p class="is-size-3 has-text-weight-semibold">Middle</p>
-              <p class="is-size-6">With an image</p>
+        <div class="product__full-info">
+          <div class="columns">
+            <div class="column is-half">
+
             </div>
-          </article>
-          <article class="tile is-child">
-            <!-- Put any content you want -->
-            <figure class="image is-3by4">
-              <img src="https://bulma.io/images/placeholders/480x640.png">
-            </figure>
-            <div class="d-flex flex-column-nowrap">
-              <p class="is-size-3 has-text-weight-semibold">Middle</p>
-              <p class="is-size-6">With an image</p>
+            <div class="column">
+              <p class="subtitle is-6"><a href="#">Carter's</a></p>
+              <p class="title is-3"> Product Name</p>
+              <br>
+              
+              <p class="subtitle is-3">56.000 sum</p>
+              <span class="tag is-success">В Наличии</span>
+              <div class="dropdown">
+                  <div class="dropdown-trigger">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+                      <span>Click me</span>
+                      <span class="icon is-small">
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                    <div class="dropdown-content">
+                      <a href="#" class="dropdown-item">
+                        Overview
+                      </a>
+                      <a href="#" class="dropdown-item">
+                        Modifiers
+                      </a>
+                      <a href="#" class="dropdown-item">
+                        Grid
+                      </a>
+                      <a href="#" class="dropdown-item">
+                        Form
+                      </a>
+                      <a href="#" class="dropdown-item">
+                        Elements
+                      </a>
+                      <a href="#" class="dropdown-item">
+                        Components
+                      </a>
+                      <a href="#" class="dropdown-item">
+                        Layout
+                      </a>
+                      <hr class="dropdown-divider">
+                      <a href="#" class="dropdown-item">
+                        More
+                      </a>
+                    </div>
+                  </div>
+                </div>
             </div>
-          </article>
+          </div>
         </div>
       </div>
     </div>
-    <!-- Tiles End-->
-
-    <!-- Brand Carousel -->
-    <div class="main__carousel mh-2">
-      <div class="container">
-        <p class="display-1 text-is-center ">Наши Бренды</p>
-        <hr class="carousel__hr">
-        <div class="owl-carousel owl-1 owl-theme">
-          <div class="item"><img src="img/company_logo/avent.png" alt=""></div>
-          <div class="item"><img src="img/company_logo/carters.png" alt=""></div>
-          <div class="item"><img src="img/company_logo/disney.png" alt=""></div>
-          <div class="item"><img src="img/company_logo/garanimals.png" alt=""></div>
-          <div class="item"><img src="img/company_logo/gerber.png" alt=""></div>
-          <div class="item"><img src="img/company_logo/tommee.png" alt=""></div>
-        </div>
-      </div>
-
-    </div>
-
-
   </div>
+
+
+
   <div class="main__footer">
     <footer class="footer">
       <div class="container">
@@ -360,9 +333,12 @@
     </footer>
   </div>
 
+  </div>
+
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="extension/owl-carousel/owl.carousel.min.js"></script>
+  <script src="js/bulma-fixed-sidenav.js"></script>
   <script src="js/script.js"></script>
 </body>
 

@@ -113,44 +113,44 @@ a:hover {
   .owl-stage img {
     max-width: 75%; }
 
-.owl-carousel .owl-nav .owl-prev,
-.owl-carousel .owl-nav .owl-next {
+.owl-1 .owl-nav .owl-prev,
+.owl-1 .owl-nav .owl-next {
   position: absolute;
   top: 45%;
   background: transparent; }
 
-.owl-carousel .owl-nav .owl-prev {
+.owl-1 .owl-nav .owl-prev {
   background: transparent;
   left: 0px;
   outline: none;
   transition: .3s; }
 
-.owl-carousel .owl-nav .owl-next {
+.owl-1 .owl-nav .owl-next {
   background: transparent;
   right: 0px;
   outline: none;
   transition: .3s; }
 
-.owl-carousel .owl-dots {
+.owl-1 .owl-dots {
   position: absolute;
   bottom: 10px; }
 
-.owl-carousel .owl-nav [class*='owl-']:hover {
+.owl-1 .owl-nav [class*='owl-']:hover {
   background: transparent;
   color: #3A69D3;
   text-decoration: none;
   outline: none; }
 
-.owl-carousel .owl-dots .owl-dot span {
+.owl-1 .owl-dots .owl-dot span {
   background: transparent; }
 
-.owl-carousel .owl-dots .owl-dot:hover span {
+.owl-1 .owl-dots .owl-dot:hover span {
   background: transparent; }
 
-.owl-carousel .owl-dots .owl-dot.active span {
+.owl-1 .owl-dots .owl-dot.active span {
   background: transparent; }
 
-.owl-carousel .owl-nav {
+.owl-1 .owl-nav {
   margin-top: 0; }
 
 .is-background-image {
@@ -200,3 +200,30 @@ a:hover {
   left: 0;
   right: 0;
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3)); }
+
+.content-carousel {
+  width: 600px;
+  display: block;
+  margin: 0 auto; }
+
+.owl-2 {
+  width: calc(100% - 170px); }
+
+.owl-2 div {
+  width: 100%; }
+
+.owl-2 .owl-controls .owl-dot {
+  background-size: cover;
+  margin-top: 10px; }
+
+.owl-2 .owl-dots {
+  position: absolute;
+  top: 0;
+  right: -170px;
+  width: 150px;
+  height: 100%; }
+
+.owl-2 .owl-dot {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
