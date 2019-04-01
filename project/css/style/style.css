@@ -227,3 +227,33 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
+
+.description-part__dropdown p {
+  margin: 0 10px 0 0 !important; }
+
+.description-part__dropdown > .dropdown > .dropdown-trigger > .button {
+  padding: 0;
+  min-width: 15rem; }
+
+.description-part__dropdown > .dropdown > .dropdown-menu {
+  min-width: 15rem; }
+
+.description-part__modal > button {
+  font-family: gt walsheim pro,sans-serif;
+  background: #3A69D3;
+  transition: .3s;
+  color: #fff; }
+
+.description-part__modal > button:hover {
+  background: #3159b6;
+  color: #fff; }
+
+.description-part__modal > button > i {
+  padding-right: 10px; }
+
+.description-part__modal .modal-card-head {
+  background: #3A69D3; }
+
+.description-part__modal .modal-card-title {
+  color: #fff;
+  text-align: center; }
