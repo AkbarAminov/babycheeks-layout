@@ -42,7 +42,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: gt walsheim pro,sans-serif; }
+  font-family: gt walsheim pro, sans-serif; }
 
 a {
   text-decoration: none;
@@ -239,7 +239,7 @@ a:hover {
   min-width: 15rem; }
 
 .description-part__modal > button {
-  font-family: gt walsheim pro,sans-serif;
+  font-family: gt walsheim pro, sans-serif;
   background: #3A69D3;
   transition: .3s;
   color: #fff; }
@@ -257,3 +257,39 @@ a:hover {
 .description-part__modal .modal-card-title {
   color: #fff;
   text-align: center; }
+
+.swiper-container {
+  background-color: transparent; }
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center; }
+
+.gallery-top .swiper-wrapper .swiper-slide {
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  display: flex;
+  justify-content: center; }
+
+.gallery-top .swiper-wrapper .swiper-slide img {
+  width: 60%; }
+
+.gallery-thumbs {
+  height: 20% !important;
+  box-sizing: border-box;
+  padding: 10px 0; }
+
+.gallery-thumbs .swiper-slide {
+  width: 15%;
+  height: 100%;
+  opacity: 0.4; }
+
+.gallery-thumbs .swiper-slide-active {
+  opacity: 1; }
+
+.gallery-thumbs .swiper-wrapper {
+  -webkit-transform: none !important;
+  transform: none !important;
+  display: flex;
+  justify-content: center; }
