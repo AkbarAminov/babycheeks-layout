@@ -1,0 +1,8 @@
+@media(max-width: 770px){
+  .main__footer{
+    text-align: center;
+  }
+  .social-media__icons{
+    justify-content: center;
+  }
+}
