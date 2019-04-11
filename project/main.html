@@ -280,15 +280,27 @@
     <!-- Brand Carousel -->
     <div class="main__carousel mh-2">
       <div class="container">
-        <p class="display-1 text-is-center ">Наши Бренды</p>
-        <hr class="carousel__hr">
-        <div class="owl-carousel owl-1 owl-theme">
-          <div class="item"><img src="img/company_logo/avent.png" alt=""></div>
-          <div class="item"><img src="img/company_logo/carters.png" alt=""></div>
-          <div class="item"><img src="img/company_logo/disney.png" alt=""></div>
-          <div class="item"><img src="img/company_logo/garanimals.png" alt=""></div>
-          <div class="item"><img src="img/company_logo/gerber.png" alt=""></div>
-          <div class="item"><img src="img/company_logo/tommee.png" alt=""></div>
+        <md-card>
+          <md-card-actions>
+            <md-button class="md-icon-button"
+                       target="_blank"
+                       href="https://github.com/surmon-china/vue-awesome-swiper/blob/master/examples/11-slides-per-view.vue">
+              <md-icon>code</md-icon>
+            </md-button>
+          </md-card-actions>
+          <md-card-media>
+            <!-- swiper -->
+            <swiper :options="swiperOption1">
+              <swiper-slide><img src="img/company_logo/avent.png" alt=""></swiper-slide>
+              <swiper-slide><img src="img/company_logo/carters.png" alt=""></swiper-slide>
+              <swiper-slide><img src="img/company_logo/disney.png" alt=""></swiper-slide>
+              <swiper-slide><img src="img/company_logo/garanimals.png" alt=""></swiper-slide>
+              <swiper-slide><img src="img/company_logo/gerber.png" alt=""></swiper-slide>
+              <swiper-slide><img src="img/company_logo/tommee.png" alt=""></swiper-slide>
+              <div class="swiper-pagination" slot="pagination"></div>
+            </swiper>
+          </md-card-media>
+        </md-card>
         </div>
       </div>
 
@@ -360,9 +372,61 @@
     </footer>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  <!-- Include the Swiper library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <!-- Swiper JS Vue -->
+  <script src="https://cdn.jsdelivr.net/npm/vue-awesome-swiper@3.1.2/dist/vue-awesome-swiper.js"></script>
+  <script>
+    Vue.use(VueAwesomeSwiper)
+    new Vue({
+      el: '#vueapp',
+      components: {
+        LocalSwiper: VueAwesomeSwiper.swiper,
+        LocalSlide: VueAwesomeSwiper.swiperSlide,
+      },
+      data: {
+        swiperOption1: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true
+            }
+          },
+        swiperOptionTop: {
+          spaceBetween: 10,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+          }
+        },
+        swiperOptionThumbs: {
+          spaceBetween: 10,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          touchRatio: 0.2,
+          slideToClickedSlide: true,
+          slidesPerView: 5,
+        }
+      },
+
+      mounted() {
+        this.$nextTick(() => {
+          const swiperTop = this.$refs.swiperTop.swiper
+          const swiperThumbs = this.$refs.swiperThumbs.swiper
+          swiperTop.controller.control = swiperThumbs
+          swiperThumbs.controller.control = swiperTop
+        })
+      },
+      
+    })
+  </script>
+ 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="extension/owl-carousel/owl.carousel.min.js"></script>
+  <script src="js/bulma-fixed-sidenav.js"></script>
   <script src="js/script.js"></script>
 </body>
 

@@ -5,4 +5,16 @@
   .social-media__icons{
     justify-content: center;
   }
+  .description-part{
+    text-align: center;
+  }
+  .description-part__dropdown{
+    justify-content: center;
+  }
+  .description-part__product-description{
+    margin: 0 auto;
+  }
+  .aboutus__container{
+    text-align: center;
+  }
 }
