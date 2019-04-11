@@ -322,7 +322,7 @@
 
                 <div class="description-part__modal mh-1">
                   <button class="button is-large modal-button" data-target="modal-ter" aria-haspopup="true"><i
-                      class="fas fa-store"></i>Добавить в корзину</button>
+                      class="fas fa-store"></i>Заказать</button>
 
                   <div id="modal-ter" class="modal">
                     <div class="modal-background"></div>
@@ -585,6 +585,24 @@
         })
       },
 
+    }),
+    new Vue({
+      el: '#vueopp',
+      components: {
+        LocalSwiper: VueAwesomeSwiper.swiper,
+        LocalSlide: VueAwesomeSwiper.swiperSlide,
+      },
+      data: {
+        swiperOption: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          freeMode: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+          }
+        }
+      }
     })
   </script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"

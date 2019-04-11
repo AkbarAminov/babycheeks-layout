@@ -7,7 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link rel="stylesheet" href="extension/owl-carousel/owl.carousel.css">
+  <!-- Swiper -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" rel="stylesheet">
+  <!-- Swiper -->
   <link rel="stylesheet" href="css/style/bulma.css">
   <link rel="stylesheet" href="css/style/tools.css">
   <link rel="stylesheet" href="css/style/style.css">
@@ -280,31 +282,37 @@
     <!-- Brand Carousel -->
     <div class="main__carousel mh-2">
       <div class="container">
-        <md-card>
-          <md-card-actions>
-            <md-button class="md-icon-button"
-                       target="_blank"
-                       href="https://github.com/surmon-china/vue-awesome-swiper/blob/master/examples/11-slides-per-view.vue">
-              <md-icon>code</md-icon>
-            </md-button>
-          </md-card-actions>
-          <md-card-media>
-            <!-- swiper -->
-            <swiper :options="swiperOption1">
-              <swiper-slide><img src="img/company_logo/avent.png" alt=""></swiper-slide>
-              <swiper-slide><img src="img/company_logo/carters.png" alt=""></swiper-slide>
-              <swiper-slide><img src="img/company_logo/disney.png" alt=""></swiper-slide>
-              <swiper-slide><img src="img/company_logo/garanimals.png" alt=""></swiper-slide>
-              <swiper-slide><img src="img/company_logo/gerber.png" alt=""></swiper-slide>
-              <swiper-slide><img src="img/company_logo/tommee.png" alt=""></swiper-slide>
-              <div class="swiper-pagination" slot="pagination"></div>
-            </swiper>
-          </md-card-media>
-        </md-card>
+          <p class="title is-4 text-center">Наши Бренды</p>
+          <hr>
+        <div id="vueopp">
+
+
+          <md-card>
+            <md-card-actions>
+              <md-button class="md-icon-button" target="_blank"
+                href="https://github.com/surmon-china/vue-awesome-swiper/blob/master/examples/21-infinite-loop-with-slides-per-group.vue">
+              </md-button>
+            </md-card-actions>
+            <md-card-media>
+              <!-- swiper -->
+              <swiper :options="swiperOption">
+                <swiper-slide><img src="img/company_logo/avent.png" alt="" width="60%"></swiper-slide>
+                <swiper-slide><img src="img/company_logo/carters.png" alt="" width="60%"></swiper-slide>
+                <swiper-slide><img src="img/company_logo/disney.png" alt="" width="60%"></swiper-slide>
+                <swiper-slide><img src="img/company_logo/garanimals.png" alt="" width="60%"></swiper-slide>
+                <swiper-slide><img src="img/company_logo/gerber.png" alt="" width="60%"></swiper-slide>
+                <swiper-slide><img src="img/company_logo/tommee.png" alt="" width="60%"></swiper-slide>
+                <div class="swiper-pagination" slot="pagination"></div>
+                <div class="swiper-button-prev" slot="button-prev"></div>
+                <div class="swiper-button-next" slot="button-next"></div>
+              </swiper>
+            </md-card-media>
+          </md-card>
         </div>
       </div>
-
     </div>
+
+  </div>
 
 
   </div>
@@ -381,49 +389,77 @@
   <script>
     Vue.use(VueAwesomeSwiper)
     new Vue({
-      el: '#vueapp',
-      components: {
-        LocalSwiper: VueAwesomeSwiper.swiper,
-        LocalSlide: VueAwesomeSwiper.swiperSlide,
-      },
-      data: {
-        swiperOption1: {
+        el: '#vueapp',
+        components: {
+          LocalSwiper: VueAwesomeSwiper.swiper,
+          LocalSlide: VueAwesomeSwiper.swiperSlide,
+        },
+        data: {
+
+          swiperOptionTop: {
+            spaceBetween: 10,
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev'
+            }
+          },
+          swiperOptionThumbs: {
+            spaceBetween: 10,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            touchRatio: 0.2,
+            slideToClickedSlide: true,
+            slidesPerView: 5,
+          },
+          swiperOption: {
             slidesPerView: 3,
             spaceBetween: 30,
             pagination: {
               el: '.swiper-pagination',
               clickable: true
             }
-          },
-        swiperOptionTop: {
-          spaceBetween: 10,
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
           }
         },
-        swiperOptionThumbs: {
-          spaceBetween: 10,
-          centeredSlides: true,
-          slidesPerView: 'auto',
-          touchRatio: 0.2,
-          slideToClickedSlide: true,
-          slidesPerView: 5,
-        }
-      },
 
-      mounted() {
-        this.$nextTick(() => {
-          const swiperTop = this.$refs.swiperTop.swiper
-          const swiperThumbs = this.$refs.swiperThumbs.swiper
-          swiperTop.controller.control = swiperThumbs
-          swiperThumbs.controller.control = swiperTop
-        })
-      },
-      
-    })
+        mounted() {
+          this.$nextTick(() => {
+            const swiperTop = this.$refs.swiperTop.swiper
+            const swiperThumbs = this.$refs.swiperThumbs.swiper
+            swiperTop.controller.control = swiperThumbs
+            swiperThumbs.controller.control = swiperTop
+          })
+        },
+
+      }),
+      new Vue({
+        el: '#vueopp',
+        components: {
+          LocalSwiper: VueAwesomeSwiper.swiper,
+          LocalSlide: VueAwesomeSwiper.swiperSlide,
+        },
+        data: {
+          swiperOption: {
+            slidesPerView: 4,
+            spaceBetween: 0,
+            freeMode: false,
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true
+            },
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev'
+            }
+          }
+        }
+      })
   </script>
- 
+
+
+
+  })
+  </script>
+
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="js/bulma-fixed-sidenav.js"></script>
