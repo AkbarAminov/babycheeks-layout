@@ -2,6 +2,7 @@
 @import "../../node_modules/bulma/bulma.sass";
 @import "../../node_modules/bulma-extensions/bulma-checkradio/src/sass/index.sass";
 @import "../../node_modules/bulma-extensions/bulma-quickview/dist/css/bulma-quickview.sass";
+@import "../../node_modules/bulma-extensions/bulma-slider/dist/css/bulma-slider.sass";
 
 .navbar-center {
   display: flex;
@@ -25,7 +26,7 @@
 
 .bd-anchors {
   display: none;
-  width: 100%;
+  width: 80%;
   padding-top: calc(1.5rem - 1px);
 }
 
