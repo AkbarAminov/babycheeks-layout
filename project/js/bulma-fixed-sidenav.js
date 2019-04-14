@@ -1,4 +1,5 @@
 'use strict';
+import bulmaCalendar from '../../node_modules/bulma-extensions/bulma-slider/dist/js/bulma-slider';
 
 document.addEventListener('DOMContentLoaded', function () {
 

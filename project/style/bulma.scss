@@ -25,7 +25,7 @@
 
 .bd-anchors {
   display: none;
-  max-width: 10.5rem;
+  width: 100%;
   padding-top: calc(1.5rem - 1px);
 }
 
@@ -36,6 +36,9 @@
   .bd-anchors.is-pinned {
     position: fixed;
     top: 0;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
   }
 }
 

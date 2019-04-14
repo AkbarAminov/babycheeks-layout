@@ -7841,7 +7841,7 @@ label.panel-block {
 
 .bd-anchors {
   display: none;
-  max-width: 10.5rem;
+  width: 100%;
   padding-top: calc(1.5rem - 1px); }
 
 @media screen and (min-width: 769px), print {
@@ -7849,7 +7849,10 @@ label.panel-block {
     display: block; }
   .bd-anchors.is-pinned {
     position: fixed;
-    top: 0; } }
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll; } }
 
 .bd-anchors-title {
   color: #b5b5b5;
